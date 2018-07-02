@@ -1,0 +1,13 @@
+<!--<h3>以下の内容で、送信する。</h3>-->
+<div class="text">
+<%= form_with(model: @hitokoto, url: hitokotos_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+  <p>本文:<%= @hitokoto.content %></p>
+  <%= form.submit  "投稿" %>
+<% end %>
+
+<%= form_with(model: @hitokoto, url: new_hitokoto_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>
+</div>

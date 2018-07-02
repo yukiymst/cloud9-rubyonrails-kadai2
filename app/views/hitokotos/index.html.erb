@@ -1,0 +1,24 @@
+<!--<h1 class="text">一言一覧</h1>-->
+<p><%= notice %></p>
+
+<div class="text">
+<table>
+  <tr>
+    <th>今日の一言</th>
+  </tr>
+<% @hitokotos.each do |hitokoto| %>
+  <tr>
+    <div class="balloon">
+    <td class="balloon-text-right"><%= hitokoto.content %></td></div>
+    <td class="edit_chatting"><%= link_to "編集", edit_hitokoto_path(hitokoto.id), data: { confirm: '本当に編集していいですか？' } %></td>
+    <td class="delete_chatting"><%= link_to '削除', hitokoto_path(hitokoto.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<br>
+<div class="text">
+<%= link_to '新しい一言を投稿', new_hitokoto_path %><br>
+</div>
+

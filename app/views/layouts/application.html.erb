@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kadai2</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="top_menu clearfix">
+        <li><a href="/hitokotos">今日の一言一覧</a></li>
+        <li><a href="/hitokotos/new">新規投稿</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div class="input_text">
+        <%= yield %>
+      </div>
+        <footer class="footer">
+          <p>Copyright © 2018 山下裕基.</p>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,167 @@
+// Place all the styles related to the hitokotos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// .hitokotos { width: 960px; margin: 0 auto;  }
+
+* {text-align: center; margin: 0 auto;}
+
+// .text{
+//     // background-color: red;
+//     text-align: center;
+//     // position:relative;
+//     margin: 0 auto;
+// }
+
+.top_menu li {
+  float:left; 
+  padding:5px; 
+  list-style-type:none; 
+}
+
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+.top_menu li a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-color: #364e96;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+h1{
+  text-align: center;
+//   line-height: 48px;
+//   position:relative;
+background-color:red;
+}
+
+.input_text{
+    // text-align: center;
+    // background-color:red;
+     max-width: 50%;
+     margin: 0 auto;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer {
+  background-color: #364e96;
+  height: 50px;
+  font-size: 1.5rem;
+//   position:absolute;
+  bottom: 0px;
+}
+
+.edit_chatting {
+	position: relative;
+	display: inline-block;
+	margin: 1.5em 0 1.5em 15px;
+	padding: 0 5px;
+	width: 90px;
+	height: 70px;
+	line-height: 70px;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: bold;
+	background: #70a6ff;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.edit_chatting:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -25px;
+  	margin-top: -15px;
+	border: 15px solid transparent;
+	border-right: 15px solid #70a6ff;
+ 	z-index: 0;
+}
+
+.delete_chatting {
+	position: relative;
+	display: inline-block;
+	margin: 1.5em 0 1.5em 15px;
+	padding: 0 5px;
+	width: 90px;
+	height: 70px;
+	line-height: 70px;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: bold;
+	background: #ff8e9d;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.delete_chatting:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -25px;
+  	margin-top: -15px;
+	border: 15px solid transparent;
+	border-right: 15px solid #ff8e9d;
+ 	z-index: 0;
+}
+
+.tweets {
+   font-size: 1.5rem;
+}
+
+.balloon {
+margin-bottom: 2em;
+}
+.balloon:before,.balloon:after {
+clear: both;
+content: "";
+display: block;
+}
+.balloon figure {
+width: 60px;
+height: 60px;
+}
+.balloon-image-left {
+float: left;
+margin-right: 20px;
+}
+.balloon-text-right {
+position: relative;
+padding: 10px;
+border: 1px solid #aaa;
+border-radius: 10px;
+max-width: -webkit-calc(100% - 80px);
+max-width: calc(100% - 80px);
+display: inline-block;
+font-size: 1.5rem;
+}
+.balloon-text-right {
+float: left;
+}
+
+// div,p {
+// -webkit-box-sizing: border-box;
+// -moz-box-sizing: border-box;
+// box-sizing: border-box;
+// }
+
+.hitokotos th{
+    font-size: 2rem;
+}
